@@ -1,0 +1,43 @@
+form {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container-login {
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px 20px 20px;
+  border: solid 5px #1c9954;
+  border-radius: 10px;
+}
+
+img {
+  width: 150px;
+  flex: 2;
+}
+
+#container-inputs {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+#input-email {
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #1c9954;
+  border: #1c9954 1px solid;
+  border-radius: 20px;
+  padding: 10px;
+}
