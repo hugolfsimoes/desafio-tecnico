@@ -1,8 +1,15 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import './style.css'
 import ebytrLogo from '../../images/logoEbytr.png'
 
-export default function index() {
+export default function Login() {
+
+  const history = useHistory();
+
+  const handleClickLogin = () => {
+    history.push('/home')
+  }
   return (
     <form id="form-login">
       <div id="container-login">
@@ -16,7 +23,7 @@ export default function index() {
           <label htmlFor="">Password</label>
           <input type="password" input-password />
         </div>
-        <button type="button">Login</button>
+        <button type="button" onClick={ handleClickLogin }>Login</button>
       </div>
     </form>
   )
